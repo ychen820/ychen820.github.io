@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        helloAgain｜Yang Chen&#39;s Blog
+        Navigationbar｜Yang Chen&#39;s Blog
         
     </title>
 
-    <link rel="canonical" href="http://ychen820.github.io/2017/04/12/helloAgain/">
+    <link rel="canonical" href="http://ychen820.github.io/2017/04/21/Navigationbar/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -137,12 +137,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>helloAgain</h1>
+                    <h1>Navigationbar</h1>
                     
                     <span class="meta">
                          作者 Yang Chen
                         <span>
-                          日期 2017-04-12
+                          日期 2017-04-21
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -154,7 +154,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            helloAgain
+            Navigationbar
         </span>
     </div>
 </header>
@@ -165,7 +165,11 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>HelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHelloHello</p>
+                <h1 id="How-To-make-NavigationBar-Looks-Better"><a href="#How-To-make-NavigationBar-Looks-Better" class="headerlink" title="How To make NavigationBar Looks Better"></a>How To make NavigationBar Looks Better</h1><p>So, recently I’m working on my instagram-like app. As you can see at my FirebaseDemo<br>I used Firebase as the backend server.<br>So in my homepage, just like any social media app, it shows the feeds posted by users. And in my app, they are beatiful photos. But I noticed that the navigationbar isn’t showing the traslusent effect it should have.<br>After research I found out that,<br>If you’re using a Customized UIViewcontrller embeded in a NavigationController. Then you add your own tableview under the buttom of the navigationbar. The content of the tableview will not pass the button of navigationbar which will lose navigationbar’s blur effect.<br>The solution is either of below :</p>
+<ol>
+<li>Set tableview  contentinset by self.tableview.contentinset to the height of navigationbar.</li>
+<li>Embed navigation controller after you set your tableview constraints to make it occupy the whole view area. It will automatically set the insets for you.</li>
+</ol>
 
                 <hr>
                 
@@ -173,15 +177,10 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2017/04/12/My-First-Post/" data-toggle="tooltip" data-placement="top"
-                           title="My First Post">&larr; Previous Post</a>
+                        <a href="/2017/04/12/helloAgain/" data-toggle="tooltip" data-placement="top"
+                           title="helloAgain">&larr; Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/2017/04/21/Navigationbar/" data-toggle="tooltip" data-placement="top"
-                           title="Navigationbar">Next Post &rarr;</a>
-                    </li>
                     
                 </ul>
 
@@ -193,7 +192,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#How-To-make-NavigationBar-Looks-Better"><span class="toc-text">How To make NavigationBar Looks Better</span></a></li></ol>
                 </div>
             </div>
         </div>
